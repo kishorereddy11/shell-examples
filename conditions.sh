@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [$1 -eq 0] 
+if [ $1 -eq 0 ] 
 then
 echo "zero"
 else
