@@ -6,3 +6,4 @@ echo "zero"
 else
 echo "not zero"
 fi
+
