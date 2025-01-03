@@ -1,5 +1,6 @@
 #!/bin/bash
-person = "AA"
+
+person= "AA"
 person1= "BB"
 
 echo "person $person"
