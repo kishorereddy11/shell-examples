@@ -4,6 +4,7 @@ if [ $uname -eq 0]
 then 
 echo "current user is root user"
 install()
+else
 exit 1
 fi
 
