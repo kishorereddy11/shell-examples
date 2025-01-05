@@ -5,4 +5,4 @@ find_files=$(find $logs -name "*es.sh")
 while read -r filepath
 do 
 echo "$filepath"
-done << $find_files
+done <<< $find_files
