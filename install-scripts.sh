@@ -6,16 +6,17 @@ echo "you must have sudo access to run script"
 exit 1
 fi
 
-validate() {
- if [ $1 -eq 0] 
+validate(){
+ if [ $1 -eq 0 ] 
  then 
  echo "$2 Sucess"
  else
  echo "$2 Failure"
+ fi
 }
 
 
-install(){
+install() {
     dnf list installed mysql
     if [ $? -eq 0]
     then
@@ -23,4 +24,5 @@ install(){
     validate $? "installing mysql"
     else
     validate $? "already present mysql"
+    fi
 }
