@@ -1,10 +1,8 @@
 #!/bin/bash
 uname=$(id -u)
-if [ $uname -eq 0]
+if [ $uname -ne 0]
 then 
-echo "current user is root user"
-install()
-else
+echo "you must have sudo access to run script"
 exit 1
 fi
 
