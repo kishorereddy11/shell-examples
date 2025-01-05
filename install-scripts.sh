@@ -1,6 +1,6 @@
 #!/bin/bash
 uname=$(id -u)
-if [ $uname -ne 0]
+if [ $uname -ne 0 ] 
 then 
 echo "you must have sudo access to run script"
 exit 1
