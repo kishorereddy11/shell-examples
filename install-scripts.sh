@@ -16,7 +16,6 @@ validate(){
 }
 
 
-install() {
     dnf list installed mysql
     if [ $? -eq 0]
     then
@@ -25,4 +24,4 @@ install() {
     else
     validate $? "already present mysql"
     fi
-}
+
