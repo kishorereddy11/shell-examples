@@ -1,6 +1,9 @@
 #!/bin/bash
 
 USERID=$(id -u)
+R="\e[31m]"
+G="\e[32m]"
+Y="\e[33m]"
 
 if [ $USERID -ne 0 ]
 then
@@ -11,9 +14,9 @@ fi
 VALIDATE() {
 if [ $1 -ne 0 ]
 then 
-echo "$2 ... failure"
+echo -e "$2 ... $R failure"
 else
-echo "$2 ... success"
+echo -e "$2 ... $G success"
 fi
 }
 
@@ -25,5 +28,5 @@ echo "Installing mysql"
 dnf install mysql -y
 VALIDATE $? "Installing mysql"
 else
-echo "Already mysql installed"
+echo -e "$Y Already mysql installed"
 fi
