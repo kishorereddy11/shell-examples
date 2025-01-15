@@ -12,7 +12,8 @@ TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
 LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE/$TIMESTAMP.log"
 
-echo "Script started at $TIMESTAMP" &>>$LOG_FILE_NAME
+# echo "Script started at $TIMESTAMP" &>>$LOG_FILE_NAME
+echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ -d $LOGS_FOLDER ]
 then
