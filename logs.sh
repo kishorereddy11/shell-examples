@@ -5,6 +5,19 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 
+LOGS_FOLDER="/var/log/shellscript-logs"
+
+if [ -d $LOGS_FOLDER ]
+then
+echo("Folder exists ")
+else
+echo("Folder does not exist")
+fi
+
+mkdir -p "$LOGS_FOLDER"
+echo("Folder created") 
+fi
+
 VALIDATE(){
     if [$1 -ne 0 ]
     then
