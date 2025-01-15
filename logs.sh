@@ -9,9 +9,9 @@ LOGS_FOLDER="/var/log/shellscript-logs"
 
 if [ -d $LOGS_FOLDER ]
 then
-echo("Folder exists ")
+echo "Folder exists "
 else
-echo("Folder does not exist")
+echo "Folder does not exist"
 fi
 
 mkdir -p "$LOGS_FOLDER"
