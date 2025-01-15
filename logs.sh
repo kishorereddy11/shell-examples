@@ -15,7 +15,7 @@ echo "Folder does not exist"
 fi
 
 mkdir -p "$LOGS_FOLDER"
-echo("Folder created") 
+echo "Folder created" 
 fi
 
 VALIDATE(){
