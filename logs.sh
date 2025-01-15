@@ -12,7 +12,6 @@ then
 echo "Folder exists "
 else
 echo "Folder does not exist"
-fi
 
 mkdir -p "$LOGS_FOLDER"
 echo "Folder created" 
