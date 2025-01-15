@@ -23,6 +23,7 @@ VALIDATE(){
     echo -e "$2 $R failure"
     else
     echo -e "$2 $G success"
+    fi
 }
 
 if [ $USERID -ne 0] 
